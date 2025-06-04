@@ -1,65 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatos sobre o Agro</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            margin: 20px 0;
-            padding: 20px;
-            background: white;
-            border-radius: 5px;
-        }
-        h2 {
-            color: #4CAF50;
-        }
-    </style>
+    <title>História do Agro e da Cidade</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>História do Agro e da Cidade</h1>
+        <p>Descubra como o agronegócio e a história da nossa cidade se entrelaçam!</p>
+    </header>
 
-<header>
-    <h1>Fatos e Curiosidades sobre o Agro</h1>
-</header>
+    <section id="historia">
+        <h2>A História do Agro</h2>
+        <p>O agronegócio é um dos pilares da economia brasileira, responsável por grandes contribuições para o crescimento do país. Desde os tempos coloniais, a agricultura e a pecuária sempre foram atividades centrais para o desenvolvimento econômico e social.</p>
+        <p>Ao longo dos anos, a evolução tecnológica e as práticas agrícolas sustentáveis foram transformando o setor, tornando-o cada vez mais competitivo e eficiente.</p>
+    </section>
 
-<section>
-    <h2>Fatos sobre o Agro</h2>
-    <ul>
-        <li>O agronegócio representa cerca de **5,4% do PIB** brasileiro.</li>
-        <li>O Brasil é um dos maiores exportadores de produtos agrícolas do mundo.</li>
-        <li>A agricultura brasileira é praticada desde antes da colonização.</li>
-    </ul>
-</section>
+    <section id="historia-cidade">
+        <h2>A História da Cidade</h2>
+        <p>A nossa cidade tem suas raízes no período colonial, com a formação de pequenos núcleos rurais. O desenvolvimento urbano começou a se intensificar no século XX, quando as atividades agropecuárias impulsionaram a economia local.</p>
+        <p>A interação entre o campo e a cidade gerou uma rica cultura de trocas e aprendizados, o que tornou a nossa cidade um modelo de desenvolvimento no interior.</p>
+    </section>
 
-<section>
-    <h2>Curiosidades</h2>
-    <ul>
-        <li>O Brasil possui uma das maiores áreas cultiváveis do mundo.</li>
-        <li>O agro brasileiro é responsável por uma grande parte das exportações do país.</li>
-        <li>Avanços tecnológicos têm revolucionado a produção agrícola.</li>
-    </ul>
-</section>
+    <section id="desafios">
+        <h2>Desafios do Agro</h2>
+        <p>Apesar do sucesso, o agronegócio enfrenta desafios constantes, como mudanças climáticas, questões ambientais e a necessidade de inovação. Quais são as principais soluções para esses desafios?</p>
+        <button onclick="startQuiz()">Desafie-se!</button>
+    </section>
 
-<section>
-    <h2>Atividades sobre o Agro</h2>
-    <ul>
-        <li>Visitas a fazendas para entender o processo de produção.</li>
-        <li>Feiras de produtos orgânicos e locais.</li>
-        <li>Workshops sobre técnicas de cultivo sustentável.</li>
-    </ul>
-</section>
+    <section id="quiz" style="display:none;">
+        <h2>Quiz: Desafios do Agro</h2>
+        <p id="pergunta"></p>
+        <ul id="respostas">
+            <!-- As respostas serão geradas pelo JS -->
+        </ul>
+        <button id="next" onclick="nextQuestion()" style="display:none;">Próxima Pergunta</button>
+    </section>
 
+    <footer>
+        <p>Desenvolvido por [Seu Nome] - 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
